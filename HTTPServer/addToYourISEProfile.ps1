@@ -19,7 +19,7 @@ $psISE.CurrentPowerShellTab.AddOnsMenu.Submenus.Add(
     $gettingthere = $psISE.CurrentFile.FullPath.Replace($folderWithSlash, $bindingAddress)
     Write-Output $gettingthere
     Write-Output "reverse slashes"
-    .'\Program Files (x86)\Mozilla Firefox\firefox.exe' $gettingthere
+    .'\Program Files (x86)\Firefox Developer Edition\firefox.exe' $gettingthere
 
    }
 },$null)
