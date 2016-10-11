@@ -56,7 +56,7 @@ function is not written.
 Stop-Webserver -urlParam 'http://localhost:8080/'
 #>
 function Stop-WebServer {
-    return 'stopping...';
+    throw [NotImplementedException];
 }
 
 <#.Synopsis
@@ -67,7 +67,7 @@ function is not written.
 
 #>
 function Restart-WebServer {
-    return 'restarting...';
+    throw [NotImplementedException];
 }
 
 <#.Synopsis
@@ -215,4 +215,3 @@ function _isPathFileOrFolder {
 $script:routes = @{
     '/Home' = { return '<html><body>Hello world!</body></html>' }
 }
-
