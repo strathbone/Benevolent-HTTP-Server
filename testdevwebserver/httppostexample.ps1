@@ -7,7 +7,7 @@ $(
     }
 )
 
-<form action="http://localhost:8080/httppostexample.ps1" method="POST" name="myform">
+<form action="http://localhost:8000/httppostexample.ps1" method="POST" name="myform">
 <input type="textfield" name="text1" />
 <input type="submit">
 </form>

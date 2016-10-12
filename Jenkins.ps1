@@ -8,4 +8,13 @@
 	
 	Note: invoke-pester can run a single .tests.ps1 file by passing the filepath as a parameter.
 #>
-Write-Output 'Hello Pester and Jenkins...'
+Write-Output 'Hello Pester and Jenkins...';
+cd $PSScriptRoot;
+
+Import-Module .\HTTPServer\HTTPServer;
+try {
+    Start-WebServer -folder .\testdevwebserver -urlParam 'http://localhost:8000/';
+}
+catch{
+    $Error[0]
+}

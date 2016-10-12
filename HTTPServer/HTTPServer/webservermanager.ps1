@@ -1,6 +1,6 @@
 ﻿$currFolder = Get-Location
 Write-Output "current folder is $currFolder"
-$bindingAddress = 'http://localhost:8080/'
+$bindingAddress = 'http://localhost:8000/'
 
 start-job -Name 'Webserver' -ScriptBlock { 
 param($folder, $address)
